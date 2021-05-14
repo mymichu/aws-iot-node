@@ -1,0 +1,34 @@
+{
+	"name": "AWS-IOT-Builder",
+	"image": "disroop/embedded-hipster-dev:0.4.0",
+	"runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+	"postCreateCommand": "setup",
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+
+	// Comment out the next line if you want to run as root instead
+	"remoteUser": "dev",
+	// Add the IDs of extensions you want installed when the container is created in the array below.
+	"extensions": [
+		"ms-vscode.cpptools",
+		"twxs.cmake",
+		"vadimcn.vscode-lldb",
+		"mhutchie.git-graph",
+		"joaompinto.asciidoctor-vscode",
+		"cschlosser.doxdocgen",
+		"ms-python.python",
+		"mhutchie.git-graph",
+		"disroop.conan",
+		"marus25.cortex-debug",
+		"formulahendry.code-runner",
+		"matepek.vscode-catch2-test-adapter",
+		"wayou.vscode-todo-highlight",
+		"ms-vscode.cmake-tools",
+		"anjali.clipboard-history",
+		"vscode-icons-team.vscode-icons",
+		"alefragnani.numbered-bookmarks"
+	],
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace"
+}

@@ -1,0 +1,12 @@
+[
+    {
+      "name": "debug",
+      "environmentSetupScript": "${workspaceFolder}/build/debug/activate.sh",
+      "toolchainFile": "${workspaceFolder}/build/debug/conan_toolchain.cmake"
+    },
+    {
+      "name": "release",
+      "environmentSetupScript": "${workspaceFolder}/build/release/activate.sh",
+      "toolchainFile": "${workspaceFolder}/build/release/conan_toolchain.cmake"
+    }
+  ]
