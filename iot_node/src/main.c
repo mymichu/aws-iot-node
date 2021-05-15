@@ -24,8 +24,8 @@
 #define TERMINAL_USE
 
 /* Update SSID and PASSWORD with own Access point settings */
-#define SSID     "MySSID"
-#define PASSWORD "MyPasswd"
+#define SSID     "SSID"
+#define PASSWORD "PASSWORD"
 
 uint8_t RemoteIP[] = {192,168,3,110};
 #define RemotePORT	8002

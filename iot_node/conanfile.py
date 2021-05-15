@@ -5,8 +5,8 @@ import os
 
 
 
-class AwsIotNode(ConanFile):
-    name = "aws_iot_node"
+class IotNode(ConanFile):
+    name = "iot_node"
     version = "0.1.0"
     license = "closed"
     url = "TODO"

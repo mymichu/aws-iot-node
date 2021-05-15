@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Release",
-      "cwd": "${workspaceRoot}",
+      "cwd": "${workspaceRoot}/src",
       "executable": "${command:cmake.launchTargetPath}",
       "request": "launch",
       "type": "cortex-debug",
@@ -14,7 +14,7 @@
       "interface": "swd",
       "device": "STM32L475VG",
       "ipAddress": "172.17.0.1",
-      "runToMain": true,
+      "runToMain": false,
       "svdFile": "${workspaceRoot}/doc/STM32L4x5.svd",
       "preRestartCommands": [
         "load",
