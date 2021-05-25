@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Release",
-      "cwd": "${workspaceRoot}/src",
+      "cwd": "${workspaceRoot}",
       "executable": "${command:cmake.launchTargetPath}",
       "request": "launch",
       "type": "cortex-debug",

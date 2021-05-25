@@ -1,8 +1,30 @@
 {
     "profiles": [
         {
+            "name":"freertos_iot_node",
+            "conanFile": "${workspaceFolder}/freertos_iot_node/conanfile.py",
+            "profileBuild":"default",
+            "profileHost":"${workspaceFolder}/.profiles/arm-m4-debug",
+            "installArg": "--build missing",
+            "buildArg":"",
+            "createUser": "mymichu",
+            "createChannel": "development",
+            "createArg":"--build=missing"
+        },
+        {
+            "name":"freertos",
+            "conanFile": "${workspaceFolder}/freertos_kernel/conanfile.py",
+            "profileBuild":"default",
+            "profileHost":"${workspaceFolder}/.profiles/arm-m4-debug",
+            "installArg": "--build missing",
+            "buildArg":"",
+            "createUser": "mymichu",
+            "createChannel": "development",
+            "createArg":"--build=missing"
+        },
+        {
             "name":"debug",
-            "conanFile": "${workspaceFolder}/conanfile.py",
+            "conanFile": "${workspaceFolder}/iot-node/conanfile.py",
             "profileBuild":"default",
             "profileHost":"${workspaceFolder}/.profiles/arm-m4-debug",
             "installArg": "--build missing",
@@ -13,7 +35,7 @@
         },
         {
             "name":"release",
-            "conanFile": "${workspaceFolder}/conanfile.py",
+            "conanFile": "${workspaceFolder}/iot-node/conanfile.py",
             "profileBuild":"default",
             "profileHost":"${workspaceFolder}/.profiles/arm-m4-debug",
             "installArg": "--build missing",
@@ -21,6 +43,15 @@
             "createUser": "mymichu",
             "createChannel": "development",
             "createArg":"--build=missing"
+        }
+    ],
+    "workspace":[
+        {
+            "name":"ws-debug",
+            "conanWs": "${workspaceFolder}/.workspace/examples.yml",
+            "profileBuild":"default",
+            "profileHost":"${workspaceFolder}/.profiles/arm-m4-debug",
+            "arg": "--build=missing"
         }
     ]
 }

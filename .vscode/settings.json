@@ -88,6 +88,7 @@
     "cmake.configureOnEdit": true,
     "cmake.parseBuildDiagnostics": true,
     "cmake.preferredGenerators": ["Ninja"],
+    "cmake.sourceDirectory":"${workspaceFolder}",
     "output.smartScroll.enabled": false,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
