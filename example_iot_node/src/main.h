@@ -22,8 +22,8 @@
 #define __MAIN_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "Components/eswifi/wifi.h"
-#include "stm32l475e_iot01.h"
+#include "B-L475E-IOT01/Components/eswifi/wifi.h"
+#include "B-L475E-IOT01/stm32l475e_iot01.h"
 #include "stdio.h"
 
 void SPI3_IRQHandler(void);
