@@ -17,6 +17,8 @@ class ExampleIotNode(ConanFile):
     def requirements(self):
         self.requires(f"stm32_bsp_iot_node/1.1.7@disroop/development")
         self.requires(f"cmake_vars/1.0.0@disroop/development",private=True)
+        self.requires("stm32_runtime_l475_vtg/0.1.0@disroop/development")
+
 
     def build(self):
         cmake = CMake(self)
